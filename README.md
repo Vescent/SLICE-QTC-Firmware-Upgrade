@@ -12,11 +12,12 @@ Repository for the latest released firmware for the SLICE-QTC
   
   Please see the revised user manual for instructions on how to use new features. 
   Available at:
+  
   https://www.vescent.com/manuals/doku.php?id=slice:qt
   
-  Left click on SLICE_Firmware_Update_Instructions-V1-10.pdf and then click 'Download' to download the instructions for use. 
+  Left click on SLICE_Firmware_Update_Instructions.pdf and then click 'Download' to download the instructions for use. 
 
-  __NOTE: If the firmware upgrade utility is unable to automatically download the upgrade files on your system, do the following steps.
+  __NOTE:__ If the firmware upgrade utility is unable to automatically download the upgrade files on your system, do the following steps.
   Left click on the upgrade package (SC-x-xx-QT-x-xx.zip) and then click 'Download' to download the firmware package to your hard drive.
   
   The two files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!
