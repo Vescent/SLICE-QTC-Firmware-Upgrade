@@ -6,15 +6,42 @@ Repository for the latest released firmware for the SLICE-QTC
   
   https://github.com/Vescent/SLICE-FFC_Firmware_Upgrade_Utility
 ## Instructions
-  __NOTE: Upgrading from Version S1.24_QT1.38 will erase all device settings and parameters. Record them externally prior to updating firmware!__
+  __NOTE: Upgrading will erase all device settings and parameters. Record them externally prior to updating firmware!__
   
   __NOTE: Upgrading from Version S1.24_QT1.38 gives the SLICE-QTC the previously unavailable ***IDN?** serial command. See Configuration S1.77_QT1.50 notes for more information.__
   
-  Left click on SLICE_Firmware_Update_Instructions-V1-10.pdf and then click 'Download' to download the instructions for use.
+  Please see the revised user manual for instructions on how to use new features. 
+  Available at:
+  https://www.vescent.com/manuals/doku.php?id=slice:qt
+  
+  Left click on SLICE_Firmware_Update_Instructions-V1-10.pdf and then click 'Download' to download the instructions for use. 
 
+  __NOTE: If the firmware upgrade utility is unable to automatically download the upgrade files on your system, do the following steps.
   Left click on the upgrade package (SC-x-xx-QT-x-xx.zip) and then click 'Download' to download the firmware package to your hard drive.
   
   The two files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!
+## Configuration S2.22_QT2.51
+ 1. Adds Auto Tune feature for automatically calculating temperature control parameters
+ 2. Improves Slow Servo Input functionality to allow making adjustments to the Slow Servo Input parameters from the main or single channel pages.
+ 3. Changes default gain for Slow Servo Input to -30.0 dB
+ 4. Adds ability to do future firmware upgrades without pressing the blue button (Upgrading from versions prior to S2.22_QT2.51 still requires a blue button press.)
+ 5. Adds unique USB descriptor information that Identifies the Model (QTC) and Serial Number of the device 
+	__NOTE: A new COM port number will be assigned to the QTC after upgrading to this version.
+ 6. Fixes an erroneous 3.5W Power Reading when the Current, Power, Voltage readout is switched to Power for the first time after power up
+ 7. Adds the ability to use either \r, \n, or \r\n to terminate serial API commands
+ 8. Fixes home screen rotary edit timeout which failed to return the readout border to blue color after an inactivity timeout
+ 9. Fixes "None" appearing in the I/O selection readout after sliding a finger to the outside of the selection drop down menu
+ 10: Fixes a failure to save External Input B selections in non-volatile memory during power cycles
+ 11. Fixes instances where multiple "Settings are Locked" message windows would be drawn requiring several OK selections to dismiss the message
+ 12. Adds the ability to exit a drop-down menu by touching outside the menu
+ 13. Improves the ability to tune noisy temperature control plants
+ 14. Improves inter board communication which speeds up response time to user inputs and provides smoother error plot rendering
+ 15. Adds Trigger In Enable / Disable temperature control functionality based on input to the Trigger In BNC connection.
+ 16. Adds device serial number to the general settings screen
+ 17  Adds SCPI *RST serial API command to restart the device without power cycling
+ 18. Changes the rotational direction of the Y scaling feature of the single channel summary page so that it is consistent with the Y axis adjustment on most oscilloscopes.
+ 19. Adds additional Y scaling increments to the single channel summary page graph scaling
+ 20. Fixes a bug that resulted in unplanned behavior or lockup when the user slides their finger off of a navigation button.
 ## Configuration S1.177_QT1.52
  1. Fixes incorrect output current reading. 
  2. Fixes corrupted front panel input voltage signal which could have adverse affects on I/O input functions.
