@@ -6,7 +6,7 @@ Repository for the latest released firmware for the SLICE-QTC
   
   https://github.com/Vescent/SLICE-FFC_Firmware_Upgrade_Utility
 ## Instructions
-  __NOTE: Upgrading will erase all device settings and parameters. Record them externally prior to updating firmware!__
+  __NOTE: Upgrading from versions prior to S2.22_QT2.51 will erase all device settings and parameters. Record them externally prior to updating firmware!__
   
   __NOTE: Upgrading from Version S1.24_QT1.38 gives the SLICE-QTC the previously unavailable ***IDN?** serial command. See Configuration S1.77_QT1.50 notes for more information.__
   
@@ -21,6 +21,16 @@ Repository for the latest released firmware for the SLICE-QTC
   Left click on the upgrade package (SC-x-xx-QT-x-xx.zip) and then click 'Download' to download the firmware package to your hard drive.
   
   The two files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!
+## Configuration S2.29_QT2.63
+ 1. Fixes inoperative Output Triggers
+ 2. Adds polarity selection for Input and Output Triggers
+ 3. Adds safety critical operating mode and I2C communication monitoring and fault messaging
+ 4. Fixes occasional lockup when Steinhart Hart and B Value coefficients were rapidly adjuted
+ 5. Fixes occasional inability to adjust temperature setpoint from the Slow Servo setpoint button.
+ 6. Adds detection and freezing of the last good state if an open circuit in a temperature plant is detected. Last measured value is displayd with a red background until released by a button press.
+ 7. Fixes sluggish behavior observed when viewing the error wave form of a badly shielded plant.
+ 8. Fixes an occasional switch to a non requested Auto Tune at 50% completion.
+ 9. Adds detection and freezing of the last good state if an Out Of Range Temperature is detected. Last measured value is displayd with a red background until released by a button press.
 ## Configuration S2.22_QT2.51
  1. Adds Auto Tune feature for automatically calculating temperature control parameters
  2. Improves Slow Servo Input functionality to allow making adjustments to the Slow Servo Input parameters from the main or single channel pages.
