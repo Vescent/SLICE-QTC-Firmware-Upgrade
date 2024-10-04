@@ -21,6 +21,10 @@ Repository for the latest released firmware for the SLICE-QTC
   Left click on the upgrade package (SC-x-xx-QT-x-xx.zip) and then click 'Download' to download the firmware package to your hard drive.
   
   The two files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!
+
+## Configuration S2.30_QT2.63
+Adds support for new Rotary Encoders.
+
 ## Configuration S2.29_QT2.63
  1. Fixes inoperative Output Triggers
  2. Adds polarity selection for Input and Output Triggers
